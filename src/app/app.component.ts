@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Map } from "leaflet";
+
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
-export class AppComponent {
-  title = 'angular';
+export class AppComponent implements OnInit {
+  title = "angular";
+  map: Map;
+
+  ngOnInit() {
+    this.map = new Map('map');
+  }
 }
