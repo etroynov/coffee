@@ -3,6 +3,11 @@
   background-color: rosybrown;
 }
 
+.header__title {
+  margin: 0;
+  font: bold 28px Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 320px 1fr;
